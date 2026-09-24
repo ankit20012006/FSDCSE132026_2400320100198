@@ -1,0 +1,77 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "AbstractTester",
+            "request": "launch",
+            "mainClass": "AbstractTester",
+            "projectName": "ABES_5b8890b4"
+        },
+        {
+            "type": "java",
+            "name": "Tester",
+            "request": "launch",
+            "mainClass": "Java.Tester",
+            "projectName": "ABES_5b8890b4"
+        },
+        {
+            "type": "java",
+            "name": "BankAccount",
+            "request": "launch",
+            "mainClass": "Java.BankAccount",
+            "projectName": "ABES_5b8890b4"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Java.Main",
+            "projectName": "ABES_5b8890b4"
+        },
+        {
+            "type": "java",
+            "name": "Student",
+            "request": "launch",
+            "mainClass": "Java.Student",
+            "projectName": "ABES_5b8890b4"
+        },
+        {
+            "type": "java",
+            "name": "palindrome",
+            "request": "launch",
+            "mainClass": "Java.palindrome",
+            "projectName": "ABES_5b8890b4"
+        },
+        {
+            "type": "java",
+            "name": "prime",
+            "request": "launch",
+            "mainClass": "Java.prime",
+            "projectName": "ABES_5b8890b4"
+        },
+        {
+            "type": "java",
+            "name": "jaggedarray",
+            "request": "launch",
+            "mainClass": "Java.jaggedarray",
+            "projectName": "ABES_5b8890b4"
+        },
+        {
+            "type": "java",
+            "name": "Addition",
+            "request": "launch",
+            "mainClass": "Java.Addition",
+            "projectName": "ABES_5b8890b4"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        }
+    ]
+}

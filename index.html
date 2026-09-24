@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Note For Aksh</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;400;500&display=swap');
+
+        :root {
+            /* Deep Night Gradient */
+            --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+            --glass-bg: rgba(255, 255, 255, 0.05);
+            --border: rgba(255, 255, 255, 0.1);
+            --text-main: #e2e8f0;
+            --text-dim: #94a3b8;
+            --accent: #fcd34d; /* Moon gold */
+            --highlight: #f472b6; /* Soft pink */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--bg-gradient);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Floating Background Orbs */
+        .orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.4;
+            z-index: 0;
+            animation: float 10s infinite ease-in-out;
+        }
+
+        .orb-1 {
+            width: 300px;
+            height: 300px;
+            background: #4c1d95;
+            top: -50px;
+            left: -50px;
+        }
+
+        .orb-2 {
+            width: 250px;
+            height: 250px;
+            background: #be185d;
+            bottom: -50px;
+            right: -50px;
+            animation-delay: 2s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        /* Card Container */
+        .card {
+            width: 90%;
+            max-width: 400px;
+            background: var(--glass-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 2.5rem 2rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            z-index: 10;
+            position: relative;
+            animation: cardEntrance 1.5s ease-out;
+        }
+
+        @keyframes cardEntrance {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Header Icon */
+        .moon-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            display: block;
+            animation: glow 3s infinite alternate;
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 10px rgba(252, 211, 77, 0.2); transform: rotate(-10deg); }
+            to { text-shadow: 0 0 20px rgba(252, 211, 77, 0.6); transform: rotate(10deg); }
+        }
+
+        .title {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.8rem;
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+            letter-spacing: 1px;
+        }
+
+        /* Message Text */
+        .content {
+            color: var(--text-main);
+            font-size: 0.95rem;
+            line-height: 1.8;
+            font-weight: 300;
+            margin-bottom: 2rem;
+        }
+
+        .content p {
+            margin-bottom: 12px;
+        }
+
+        /* Emphasis Styles */
+        .highlight {
+            color: var(--highlight);
+            font-weight: 400;
+        }
+
+        .white-bold {
+            color: #fff;
+            font-weight: 500;
+        }
+
+        .closing-line {
+            margin-top: 1.5rem;
+            font-style: italic;
+            opacity: 0.9;
+            color: var(--accent);
+        }
+
+        /* Divider */
+        .divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            width: 60%;
+            margin: 1.5rem auto;
+        }
+
+        /* Signature Section */
+        .signature-block {
+            margin-top: 1rem;
+            text-align: right;
+            padding-right: 10px;
+        }
+
+        .signature-name {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.5rem;
+            color: var(--text-main);
+            opacity: 0.9;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <div class="card">
+        <span class="moon-icon">🌙</span>
+        <div class="title">Before you sleep...</div>
+
+        <div class="content">
+            <p>Because tum apne baare mein ye baat bhool jaate ho — <span class="white-bold">you must appreciate yourself.</span></p>
+            
+            <p>Yup, you really must ✨</p>
+            
+            <p>Jo chhoti-chhoti cheezein tum dusron ko khush karne ke liye karte ho na,<br>
+            trust me, <span class="highlight">koi aur itni sincerely nahi karta.</span></p>
+            
+            <div class="divider"></div>
+
+            <p>Isliye thoda apna khayal rakhna seekho 🌿</p>
+            
+            <p>Because khud ka khayal rakhna bhi utna hi important hai jitna dusron ka.</p>
+            
+            <p>Aur haan, tumhare jaise log aaj-kal bahut kam bache hain is duniya mein 🤍</p>
+            
+            <p>So please, take care of yourself too.</p>
+            
+            <p>Okay?</p>
+
+            <p class="closing-line">Dhyan rakhna</p>
+        </div>
+
+        <div class="signature-block">
+            <span class="signature-name">- Ankit</span>
+        </div>
+    </div>
+
+</body>
+</html>

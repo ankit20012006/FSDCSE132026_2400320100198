@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Details Form</title>
+    <style>
+        body{
+            margin:0;
+            padding:30px;
+            background:#d8eef9;
+        }
+        .container{
+             width:420px;
+            margin:auto;
+            background:#fff;
+            padding:20px;
+            border:2px dotted black;
+            border-radius:10px;
+        }
+         h2{
+            text-align:center;
+            color:#046fa9;
+            margin-bottom:20px;
+        }
+        label{
+            display:block;
+            font-size:18px;
+            font-weight:bold;
+            margin-top:12px;
+            margin-bottom:5px;
+        }
+        input[type=text],
+        input[type=email],
+        select,
+        textarea{
+            width:100%;
+            padding:10px;
+            font-size:16px;
+            border:1px solid #999;
+            border-radius:5px;
+            box-sizing:border-box;
+        }
+         .gender{
+            margin-top:5px;
+            font-size:16px;
+        }
+        input[type=submit]:hover,
+        input[type=reset]:hover{
+            background:#0676b2;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+<h2>Faculty Details</h2>
+<from>
+   <label>Faculty Name</label>
+ <input type="text" placeholder="Enter Name">
+ <label>Faculty ID</label>
+ <input type="text" placeholder="Enter ID">
+ <label>Department</label>
+<select>
+    <option>CSE</option>
+    <option>IT</option>
+    <option>ECE</option>
+    <option>EEE</option>
+    <option>Mechanical</option>
+    <option>Civil</option>
+</select>
+<label>Gender</label>
+<div class="gender">
+    <input type="radio" name="gender">Male
+    <input type="radio" name="gender">Female
+</div>
+    <label>Email</label>
+    <input type="email" placeholder="Enter Email">
+   <label>Address</label>
+   <textarea placeholder="Enter Address"></textarea>
+<div class="buttons">
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+</div>
+</from>
+</body>
+</html>

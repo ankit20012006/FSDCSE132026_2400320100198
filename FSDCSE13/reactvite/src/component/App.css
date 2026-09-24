@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.imdb-card {
+  width: 650px;
+  min-height: 720px;
+  padding: 30px 32px;
+  background: linear-gradient(145deg, #17649a, #07507f);
+  color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.imdb-card::before {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  top: -70px;
+  right: -50px;
+}
+
+.imdb-card::after {
+  content: "";
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: rgba(255, 193, 7, 0.08);
+  bottom: -50px;
+  left: -40px;
+}
+
+.top-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+
+.imdb-logo {
+  display: inline-block;
+  background: #f5c518;
+  color: #111;
+  font-size: 34px;
+  font-weight: 900;
+  padding: 4px 9px;
+  letter-spacing: -1px;
+  border-radius: 3px;
+}
+
+.best-year {
+  text-align: right;
+  line-height: 1;
+}
+
+.best-year span {
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.best-year strong {
+  display: block;
+  font-size: 34px;
+  color: #f5c518;
+  margin-top: 2px;
+}
+
+.imdb-card h1 {
+  position: relative;
+  z-index: 2;
+  margin: 18px 0 28px;
+  font-size: 27px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  position: relative;
+  z-index: 2;
+}
+
+.movie {
+  display: grid;
+  grid-template-columns: 25px 55px 1fr;
+  align-items: center;
+  gap: 8px;
+  min-height: 92px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 8px 0;
+}
+
+.movie-rank {
+  font-size: 23px;
+  font-weight: 800;
+  color: #f5c518;
+  text-align: center;
+}
+
+.movie-poster {
+  width: 55px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  background: #234;
+}
+
+.movie-title {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: white;
+}
+
+@media (max-width: 700px) {
+  .app {
+    padding: 15px;
+  }
+
+  .imdb-card {
+    width: 100%;
+    min-height: auto;
+    padding: 22px;
+  }
+
+  .movies-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
